@@ -2,6 +2,11 @@ body, html {
   height: 100%;
 }
 
+body {
+  overflow-y: auto; 
+  overflow-x: hidden;
+}
+
 .home-container {
   height: 100%; 
   position: relative;
@@ -35,7 +40,7 @@ nav a {
   font-family: 'Segoe UI';
   text-align: center;
   padding: 20px;
-  padding-left: 30px;
+  padding-left: 25px;
   padding-top: 30px;
   text-decoration: white;
   font-size: 17px;
@@ -90,7 +95,7 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
   position: relative;
   z-index: 2; 
 }
@@ -99,6 +104,9 @@ nav a:hover {
   color: white;
   font-family: 'Segoe UI';
   text-align: center;
+  margin-top: 5px;  
+  margin-bottom: 5px; 
+  line-height: 1.2;
 }
 
 .text2 {
@@ -106,4 +114,64 @@ nav a:hover {
   text-align: center;
   font-size: 60px;
   font-weight: bold;
+  margin-top: 5px;  
+  margin-bottom: 5px; 
+  line-height: 1.2;
 }
+
+.page-button{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2; 
+  height: 2vh;
+  margin-top: 0px;
+}
+
+.button-text:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+.button-text {
+  color: white;
+  font-family: 'Segoe UI';
+  background: transparent;
+  text-align: center;
+  padding: 15px;
+  border-style: solid;
+  border-width: thin;
+  border-color: white;
+  width: 200px;
+}
+
+.parallax {
+  
+  /* Set a specific height */
+   min-height: 200px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-container2 {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.text3 {
+  color: black;
+  text-align: center;
+  font-size: 55px;
+  margin-top: 0px;
+  font-weight: bold;
+}
+

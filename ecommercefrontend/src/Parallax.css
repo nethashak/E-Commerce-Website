@@ -1,0 +1,32 @@
+.parallax-container {
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax Effect */
+    z-index: -1;
+  }
+  
+  .parallax-content {
+    position: relative;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
