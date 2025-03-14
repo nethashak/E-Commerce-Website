@@ -31,7 +31,7 @@ function Home() {
             <div className="center-content">
                 <p class="text1">CASUAL & EVERYDAY</p>
                 <p class="text2"><i>Effortlessly Blend Comfort <br /> & Style!</i></p>
-                <p class="text1">Effortlessly  comfort and style with our Casual & Everyday collection, featuring cozy sweaters, versatile <br /> denim, laid-back tees, and relaxed-fit joggers for your everyday adventures</p>
+                <p class="text1">Effortlessly blend comfort and style with our Casual & Everyday collection, featuring cozy sweaters, versatile <br /> denim, laid-back tees, and relaxed-fit joggers for your everyday adventures</p>
             </div>
         </div>
     );
