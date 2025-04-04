@@ -2,9 +2,11 @@ import React from 'react';
 import heroImage from '../asserts/heroImage.jpg';
 import ProductOptions from '../component/ProductOptions';
 import image1 from "../asserts/timImage.jpg"
+import { useNavigate } from 'react-router-dom';
 
 
 function Home() {
+    const navigate = useNavigate();
     return (
         <div
             className="home-container"
@@ -19,7 +21,7 @@ function Home() {
             <div className="topnav">
                 <nav>
                     <a href="#home"><b>Home</b></a>
-                    <a href="#shop"><b>Shop</b></a>
+                    <a onClick={() => navigate('/products')} href="#shop"><b>Shop</b></a>
                     <a href="#about"><b>About Us</b></a>
                     <a href="contact"><b>Contact Us</b></a>
                 </nav>
@@ -36,7 +38,7 @@ function Home() {
             </div>
 
             <div className="page-button">
-                <button class="button-text" type="button">VIEW COLLECTION</button>
+                <button class="button-text" type="button" onClick={() => navigate('/products')} >VIEW COLLECTION</button>
             </div>
 
             <div class="parallax"></div>
@@ -86,7 +88,7 @@ function Home() {
                         Collection Now!</i></p>
 
                     <div className="page-button2">
-                        <button class="button-text2" type="button">VIEW COLLECTION</button>
+                        <button class="button-text2" type="button" onClick={() => navigate('/products')} >VIEW COLLECTION</button>
                     </div>
                 </div>
             </div>
@@ -97,7 +99,7 @@ function Home() {
                     <p className="text8"><i>Professional Pinstripe<br />Blazers Collection</i></p>
                     <p className="text9">Elevate your workwear with our Professional Pinstripe Blazers Collection<br />where tailored sophistication meets modern confidence<br />for a powerfully polished office look.</p>
                     <div className="page-button3">
-                        <button class="button-text3" type="button">SHOP NOW</button>
+                        <button class="button-text3" type="button" onClick={() => navigate('/products')} >SHOP NOW</button>
                     </div>
                 </div>
                 <div className="image-container">
@@ -116,7 +118,7 @@ function Home() {
                     <br />
                     <br />
                     <div className="page-button4">
-                        <button class="button-text4" type="button">SHOP NOW</button>
+                        <button class="button-text4" type="button" onClick={() => navigate('/products')} >SHOP NOW</button>
                     </div>
                 </div>
             </div>
@@ -205,7 +207,7 @@ function Home() {
                     <p className="text17">Elevate Your Wardrobe, Embrace Timeless Style!</p>
                     <p className="text16">Explore our collections today and experience the joy of fashion. Shop now for the<b />epitome of chic sophistication!</p>
                     <div className="page-button5">
-                        <button class="button-text5" type="button">SHOP NOW</button>
+                        <button class="button-text5" type="button" onClick={() => navigate('/products')} >SHOP NOW</button>
                     </div>
                  </div>
             </div>

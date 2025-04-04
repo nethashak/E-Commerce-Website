@@ -17,7 +17,7 @@ const Products = ({ addToCart }) => {
 
       <div className="topnav">
         <nav>
-          <a href="#home"><b>Home</b></a>
+          <a onClick={() => navigate('/')} href="#home"><b>Home</b></a>
           <a href="#shop"><b>Shop</b></a>
           <a href="#about"><b>About Us</b></a>
           <a href="#contact"><b>Contact Us</b></a>
